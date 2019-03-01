@@ -1,0 +1,3 @@
+[submodule "submodules/forkdelta-tokenbase"]
+	path = submodules/forkdelta-tokenbase
+	url = https://github.com/forkdelta/tokenbase

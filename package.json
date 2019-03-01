@@ -1,0 +1,30 @@
+{
+  "name": "biglistoftokens",
+  "version": "0.0.0",
+  "description": "A Big List of Ethereum Tokens",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --bail"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/GuildCrypt/biglistoftokens.git"
+  },
+  "author": "GuildCrypt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GuildCrypt/biglistoftokens/issues"
+  },
+  "homepage": "https://github.com/GuildCrypt/biglistoftokens#readme",
+  "dependencies": {
+    "amorph": "^4.2.0",
+    "amorph-hex": "^3.0.1",
+    "mz": "^2.7.0",
+    "yaml": "^1.3.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^6.0.1"
+  }
+}
