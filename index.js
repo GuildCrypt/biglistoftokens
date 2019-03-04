@@ -1,5 +1,5 @@
 const Amorph = require('amorph')
-const ForkDeltaTokenbase = require('./lib/ForkDeltaTokenbase')
+const Mewel = require('./lib/Mewel')
 
 class InvalidAddressError extends Error {}
 class InvalidNetworkIdError extends Error {}
@@ -17,14 +17,14 @@ module.exports = class Token {
     this.address = address
   }
 
-  getForkDeltaTokenbase() {
+  getMewel() {
     if (this.networkId !== 1) {
       throw new InvalidNetworkIdError()
     }
-    if (this.forkDeltaTokenbaseInfo) {
-      return this.forkDeltaTokenbaseInfo
+    if (this.mewel) {
+      return this.mewel
     }
-    this.forkDeltaTokenbaseInfo = new ForkDeltaTokenbase(this.address)
-    return this.forkDeltaTokenbaseInfo
+    this.mewel = new Mewel(this.address)
+    return this.mewel
   }
 }

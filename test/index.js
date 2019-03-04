@@ -16,8 +16,8 @@ function testToken(networkId, addressesHexPrefixed) {
     it('should create token', () => {
       token = new Token(networkId, address)
     })
-    it('should get ForkDeltaTokenbaseInfo', async () => {
-      const info = await token.getForkDeltaTokenbase().fetchInfo()
+    it('should get mewel info', async () => {
+      const info = await token.getMewel().fetchInfo()
       console.log(info)
     })
   })
